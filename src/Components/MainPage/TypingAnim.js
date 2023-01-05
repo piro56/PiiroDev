@@ -6,23 +6,24 @@ export default function TypingAnim() {
     var year = currentTime.getFullYear().toString()
     var str = `Today is ${month} ${day}, ${year}`;
     str = "Content coming soon!"
-    console.log(str);
 
     return (
-        <TypeAnimation
-            sequence={[
-            'Welcome!', // Types 'One'
-            2000, // Waits 1s
-            str,
-            2000,
-            () => {
-                // CALLBACK
-            }
-            ]}
-            wrapper="div"
-            cursor={true}
-            repeat={Infinity}
-            style={{ fontSize: '2em' }}
-        />
+        <div className="App-TypingAnim">
+            <TypeAnimation 
+                sequence={[
+                'Welcome!', // Types 'One'
+                2000, // Waits 1s
+                str,
+                2000,
+                () => {
+                    // CALLBACK
+                }
+                ]}
+                wrapper="div"
+                cursor={true}
+                repeat={Infinity}
+                style={{ fontSize: '2em' }}
+            />
+        </div>
         );
 }

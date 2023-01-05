@@ -60,7 +60,10 @@ input[type="text"].CI-SecretInput {
 }
 
 
-
+.App-TypingAnim {
+  position: relative;
+  top: -250px;
+}
 .App-link {
   color: #61dafb;
 }
