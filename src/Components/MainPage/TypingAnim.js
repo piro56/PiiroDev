@@ -5,6 +5,7 @@ export default function TypingAnim() {
     var day = currentTime.getDay().toString();
     var year = currentTime.getFullYear().toString()
     var str = `Today is ${month} ${day}, ${year}`;
+    str = "Content coming soon!"
     console.log(str);
 
     return (
