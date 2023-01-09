@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 
 
 function inputBlur(e, setForm, defaultForm, setButton) {
-    // if (e.target.value=="") { setForm(defaultForm); setButton(false);}
-    // else {
-    //     setButton(true);
-    // }
+    if (e.target.value=="") { setForm(defaultForm); setButton(false);}
+    else {
+        setButton(true);
+    }
 }
 
 function inputChange(e, setForm, defaultForm, setButton) {
