@@ -1,17 +1,17 @@
 import './App.css';
-import TypingAnim from './Components/MainPage/TypingAnim';
-import CodeInput from './Components/MainPage/CodeInput';
+import MainPage from './Components/MainPage/MainPage';
+import ResumePage from './Components/Resume Page/ResumePage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-Top">
-      </div>
-      <header className="App-header">
-        <CodeInput />
-        <TypingAnim/>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage/>}></Route>
+        <Route path="/resume" element={<ResumePage/>}></Route>
+      </Routes>
+    
+    </BrowserRouter>
   );
 }
 
