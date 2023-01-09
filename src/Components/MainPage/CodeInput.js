@@ -2,10 +2,18 @@ import React, {useState} from 'react'
 
 
 function inputBlur(e, setForm, defaultForm, setButton) {
-    if (e.target.value=="") { setForm(defaultForm); setButton(false);}
-    else {
+    // if (e.target.value=="") { setForm(defaultForm); setButton(false);}
+    // else {
+    //     setButton(true);
+    // }
+}
+
+function inputChange(e, setForm, defaultForm, setButton) {
+    setForm(e.target.value);
+    if (e.target.value != "" && e.target.value != defaultForm) {
         setButton(true);
-    }
+    } else (setButton(false));
+    
 }
 
 export default function CodeInput() {
@@ -21,7 +29,7 @@ export default function CodeInput() {
             style={(form == defaultForm) ? faded : white}
             className="CI-SecretInput"
             defaultValue={"Secret Code"}
-            onChange={e => setForm(e.target.value)}
+            onChange={e => inputChange(e, setForm, defaultForm, setButton)}
             onBlur={e => inputBlur(e, setForm, defaultForm, setButton)}
             onFocus={e => {if (e.target.value == defaultForm) {setForm("");}}}
             value={form}
