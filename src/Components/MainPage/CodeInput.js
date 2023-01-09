@@ -13,7 +13,6 @@ function inputChange(e, setForm, defaultForm, setButton) {
     if (e.target.value != "" && e.target.value != defaultForm) {
         setButton(true);
     } else (setButton(false));
-    
 }
 
 export default function CodeInput() {
