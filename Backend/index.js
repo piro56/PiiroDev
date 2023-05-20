@@ -7,6 +7,7 @@ const BACKEND_PORT = process.env.PORT || 8080;
 
 
 app.get("/", (req, res) => {
+   console.log("[INFO] Connection Recieved");
    res.json({str: "Hello World!"}); 
 });
 
