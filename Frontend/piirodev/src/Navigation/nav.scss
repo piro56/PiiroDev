@@ -1,0 +1,70 @@
+@import "../scss/app.scss";
+
+.navbar-nav > .nav-item{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.text-large {
+    font-size: 150%;
+}
+
+.text-med {
+    font-size: 125%;
+
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    padding: 0;
+    &:hover {
+        color: $secondary;
+    }
+
+
+}
+
+/* Add this CSS to your stylesheet */
+.nav-item.dropdown .nav-link.nav-sub:focus,
+.nav-item.dropdown .nav-link.nav-sub:hover {
+    color: $secondary;
+}
+
+.nav-sub {
+    transition: all 0.3s ease;
+    background: 
+    linear-gradient(to right, rgb(235, 84, 8), rgb(251, 99, 11)),
+    linear-gradient(to right, rgb(255, 77, 0), rgb(230, 23, 0), rgb(230, 3, 3));
+    background-size: 100% 0.0em, 0 0.0em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+
+    &:hover, &:focus, &:focus-within {
+        color: $secondary;
+        font-size: 130%;
+        background-size: 0 0.1em, 100% 0.1em;
+    }
+
+}
+
+.nav-main {
+    &:hover {
+        font-size: 160%
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 10px;
+        left: 0;
+        background-color: $secondary;
+        transform-origin: center;
+        transition: transform 0.5s ease-out;
+    }
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: center;
+    }
+}
