@@ -1,9 +1,16 @@
 import React, { useRef } from 'react';
-import orangeNebula from '../imgs/orangeneb.jpg';
+import orangeNebula from './orangeneb.jpg';
 import './flagcarousel.css';
 
 
-
+/**
+ * 
+ * @param {
+ *  src: image for card
+ *  text: Text to be displayed under card image
+ * } props
+ * @returns FlagCard 
+ */
 export default function FlagCard(props) {
 
     const cardSource = props.src ? props.src : orangeNebula;
