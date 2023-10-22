@@ -25,7 +25,7 @@ export default function NavBar() {
                         <div className="h-100 col-4 nav-section d-inline">
                             <div className="row h-100">
                                 <div className="col-12 nav-item d-inline-block justify-content-center align-items-bottom h-100">
-                                    <a className="nav-link nav-sub" href="me" >About Me</a>
+                                    <a className="nav-sub" href="me" >About Me</a>
                                 </div>
                             </div>
                         </div>
@@ -40,10 +40,10 @@ export default function NavBar() {
                         <div className="col-4 nav-section">
                             <div className="row">
                                 <div className="col-6 nav-item align-middle">
-                                    <a className="nav-link nav-sub" href="https://notes.piiro.dev/" >Writing</a>
+                                    <a className="nav-sub" href="https://notes.piiro.dev/" >Writing</a>
                                 </div>
                                 <div className="col-6 nav-item dropdown">
-                                    <a className="nav-link nav-sub text-med dropdown-toggle" href="#dropdown"
+                                    <a className=" nav-sub dropdown-toggle" href="#dropdown"
                                         id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">Info</a>
                                     <div className="dropdown-menu bg-primary nav-sub" aria-labelledby="navbarDropdown">
@@ -66,7 +66,7 @@ export default function NavBar() {
                 <a className="nav-link text-secondary align-middle" href="/">Meet's Development Site</a>
                 </h1>
                 <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="align-center navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <h1>&#9776;</h1>
                 </button>
                 <nav className="navbar navbar-dark">
