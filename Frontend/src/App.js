@@ -1,19 +1,13 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './Components/Navigation/navbar';
-import FlagCarousel from './Components/FlagCard/flagcarousel';
-import BackgroundParticles from './Components/BGParticles/particles';
+import { React, useEffect } from "react";
 import './scss/app.scss';
+import MainPage from "./Components/MainPage";
+
 
 function App() {
+
   return (
-    <div style={{ height: '100%', position: 'relative' }}>
-      <BackgroundParticles />
-      <NavBar />
-      <h1 className="text-center">Still Under Construction</h1>
-      <div class="container-fluid justify-content-center">
-        <FlagCarousel />
-        
-      </div>
+    <div>
+      <MainPage/>
     </div>
   );
 }

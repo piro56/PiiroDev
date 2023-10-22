@@ -1,0 +1,9 @@
+#cubeHolder {
+    /* width: 400px;
+    height: 400px; */
+    align-self: center;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.cubeCanvas {
+}
