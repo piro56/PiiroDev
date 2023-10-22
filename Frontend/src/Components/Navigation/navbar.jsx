@@ -48,9 +48,9 @@ export default function NavBar() {
                                         id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">Info</a>
                                     <div className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#1">Action</a>
-                                        <a className="dropdown-item" href="#2">Another action</a>
-                                        <a className="dropdown-item" href="#3">Something else here</a>
+                                        <a className="dropdown-item" href="#1">not</a>
+                                        <a className="dropdown-item" href="#2">done</a>
+                                        <a className="dropdown-item" href="#3">yet</a>
                                     </div>
                                 </div>
                             </div>
