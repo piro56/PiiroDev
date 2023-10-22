@@ -15,7 +15,7 @@ export default function NavBar() {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
     }, []);
-    const isMobile = width <= 768;
+    const isMobile = width <= 1000;
     if (!isMobile) {
     return (
         <div className="container">
@@ -41,7 +41,7 @@ export default function NavBar() {
                         <div className="col-4 nav-section">
                             <div className="row">
                                 <div className="col-6 nav-item align-middle">
-                                    <a className="nav-link nav-sub text-med" href="#t" >Writing</a>
+                                    <a className="nav-link nav-sub text-med" href="https://notes.piiro.dev/" >Writing</a>
                                 </div>
                                 <div className="col-6 nav-item dropdown">
                                     <a className="nav-link nav-sub text-med dropdown-toggle" href="#dropdown"
@@ -63,6 +63,24 @@ export default function NavBar() {
     else {
         return (
             <div>
+                <h1>
+                <a className="nav-link text-secondary align-middle" href="/">Meet's Development Site</a>
+                </h1>
+                <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                             <a className="nav-link" href="#t" >About Me</a>
+                             <a className="nav-link" href="https://notes.piiro.dev/" >Writing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
                 
             </div>
         )

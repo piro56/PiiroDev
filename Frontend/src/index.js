@@ -1,13 +1,35 @@
 import './scss/app.scss';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
+import App from './App';
+import ErrorPage from "./Pages/Error/ErrorPage";
+import NotesLoader from './Pages/NotesLoader/NotesLoader';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    errorElement: <ErrorPage />,
+    
+  },
+  {
+    path:"/notes",
+    element: <NotesLoader/>,
+  }
+]);
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

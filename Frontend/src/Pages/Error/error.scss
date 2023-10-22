@@ -1,0 +1,19 @@
+@import "../../scss/app.scss";
+
+.highlight-text {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: 
+    linear-gradient(to right, rgb(235, 84, 8), rgb(251, 99, 11)),
+    linear-gradient(to right, rgb(255, 77, 0), rgb(230, 23, 0), rgb(230, 3, 3));
+    background-size: 100% 0.0em, 0 0.0em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+
+    &:hover, &:focus, &:focus-within {
+        color: $secondary;
+        background-size: 0 0.1em, 100% 0.1em;
+    }
+
+}
