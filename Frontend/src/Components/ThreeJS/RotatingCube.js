@@ -19,7 +19,7 @@ export default function RotatingCube(props) {
 
         const controls = new OrbitControls( camera, renderer.domElement );
         controls.enableDamping = true;
-
+        controls.enableZoom = false;
         // controls.dampingFactor = 0.05;
 
         controls.update();
