@@ -1,9 +1,23 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import './nav.scss';
 
-export default function NavBar() {
-    return (
 
+
+export default function NavBar() {
+
+    const [width, setWidth] = useState(window.innerWidth);
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+    const isMobile = width <= 768;
+    if (!isMobile) {
+    return (
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-dark bg-body justify-content-center p-0" style={{ marginTop: '20px' }}>
                 <div className="container">
@@ -45,8 +59,12 @@ export default function NavBar() {
                 </div>
             </nav>
         </div>
-
-
-
-    )
+    ) }
+    else {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
