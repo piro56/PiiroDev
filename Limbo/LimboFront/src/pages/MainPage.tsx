@@ -1,13 +1,10 @@
+import NavBar from "../components/NavBar/NavBar";
+
 export default function MainPage() {
 
     return (
         <div>
-            <h1 className="text-red underline">Hello</h1>            
-
-
+            <NavBar/>
         </div>
     )
-
-
-
 }
