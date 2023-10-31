@@ -1,0 +1,5 @@
+# VS Code Ignore
+
+.vs/
+bin/
+obj/
