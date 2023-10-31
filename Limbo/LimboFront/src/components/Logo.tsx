@@ -1,6 +1,6 @@
 
 interface LogoInterface {
-    className: string;
+    className?: string;
 }
 
 export default function Logo(props: LogoInterface) {
@@ -11,7 +11,10 @@ export default function Logo(props: LogoInterface) {
     }
 
     return (
-        <img className={props.className} style={orangeify} src="/src/assets/logo.png"></img>
+        <a className = "flex items-center group" href="/">
+            <img className="h-8 mr-2 group-hover:text-secondary ease-in duration-150" style={orangeify} src="/src/assets/logo.png"></img>
+            <h1 className="text-lg text-txtcol group-hover:text-secondary ease-in duration-150">Limbo</h1>
+        </a>
     )
 
 }

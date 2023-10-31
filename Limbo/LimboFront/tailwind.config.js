@@ -8,6 +8,7 @@ export default {
       colors: {
         'secondary': '#FF7900',
         'primary': '#19191a',
+        'tertiary': '#1d1d1e',
         'txtcol': '#FFFFFF',
       },
     },

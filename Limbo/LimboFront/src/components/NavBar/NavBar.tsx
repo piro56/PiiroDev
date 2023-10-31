@@ -1,19 +1,17 @@
 import React from "react";
 import Logo from "../Logo";
+import HoverLink from "../HoverLink";
 
 
 export default function NavBar() {
     return (
         <span>
-            <nav className="bg-white border-gray-200 dark:bg-primary">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-                    <a className = "flex items-center" href="/">
-                        <Logo className="h-8 mr-3"/>
-                        <h1 className="text-lg text-txtcol">Limbo</h1>
-                    </a>
-                    <h1 className="text-lg text-txtcol">What We Do</h1>
-                    <h1 className="text-lg text-txtcol">Who We Are</h1>
-                    <h1 className="text-lg text-txtcol">Contact</h1>
+            <nav className="bg-white border-gray-200 dark:bg-primary pt-8">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4 ">
+                    <Logo/>
+                    <HoverLink href="whatwedo">What We Do</HoverLink>
+                    <HoverLink>Who We Are</HoverLink>
+                    <HoverLink>Contact</HoverLink>
                 </div>
             </nav>
 
