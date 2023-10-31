@@ -1,0 +1,16 @@
+{
+  "name": "piirodevbackend",
+  "version": "1.0.0",
+  "description": "backend for piiro dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Meet Patel",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "08Hat8G4BCPdvN4zP1u8YJT62ut6ngyfZvuMwK66LJuWDKuCUwSbalkQoYqVjMAgTUwZ6T53QKcx16gZ8mkXbg==",
+  "dgSpecHash": "Ec55iK2ytHM7+5KmEaXmiV3R0RZJmTnezlH8ANlLjN/01df/+pOKx/SflR/zyYRJjE2spDowL8IzCGWytmN76w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\epicp\\Documents\\Programming\\PiiroDev\\C# Backend\\LearningWebApp\\LearningWebApp\\LearningWebApp.csproj",
+  "projectFilePath": "C:\\Users\\epicp\\Documents\\Programming\\piirodev\\C# Backend\\LearningWebApp\\LearningWebApp\\LearningWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\epicp\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\epicp\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -1336,11 +1336,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\epicp\\Documents\\Programming\\PiiroDev\\C# Backend\\LearningWebApp\\LearningWebApp\\LearningWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\epicp\\Documents\\Programming\\piirodev\\C# Backend\\LearningWebApp\\LearningWebApp\\LearningWebApp.csproj",
       "projectName": "LearningWebApp",
-      "projectPath": "C:\\Users\\epicp\\Documents\\Programming\\PiiroDev\\C# Backend\\LearningWebApp\\LearningWebApp\\LearningWebApp.csproj",
+      "projectPath": "C:\\Users\\epicp\\Documents\\Programming\\piirodev\\C# Backend\\LearningWebApp\\LearningWebApp\\LearningWebApp.csproj",
       "packagesPath": "C:\\Users\\epicp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\epicp\\Documents\\Programming\\PiiroDev\\C# Backend\\LearningWebApp\\LearningWebApp\\obj\\",
+      "outputPath": "C:\\Users\\epicp\\Documents\\Programming\\piirodev\\C# Backend\\LearningWebApp\\LearningWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\epicp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1351,6 +1351,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\epicp\\Documents\\DSHARP": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
