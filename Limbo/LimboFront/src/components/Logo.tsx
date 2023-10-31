@@ -1,9 +1,7 @@
 
-interface LogoInterface {
-    className?: string;
-}
 
-export default function Logo(props: LogoInterface) {
+
+export default function Logo() {
 
     // Converts bw img to orange
     const orangeify = {

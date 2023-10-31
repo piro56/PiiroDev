@@ -1,10 +1,16 @@
-﻿namespace LearningWebApp.Models
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace LearningWebApp.Models
 {
     public class TodoItem
     {
-        public long id;
-        public string? name;
-        public bool isComplete;
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? Id {  get; set; }
+
+        public string? name { get; set; }
+        public bool isComplete { get; set; }
 
 
     }

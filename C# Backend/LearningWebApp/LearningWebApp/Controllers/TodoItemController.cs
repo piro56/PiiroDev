@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using LearningWebApp.Models;
+using LearningWebApp.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,39 @@ namespace LearningWebApp.Controllers
     [ApiController]
     public class TodoItemController : ControllerBase
     {
-        // GET: api/<ValuesController>
+
+        private readonly MongoDBService _mongoDbService;
+        public TodoItemController(MongoDBService mongoDbService)
+        {
+            _mongoDbService = mongoDbService;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<List<TodoItem>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return await _mongoDbService.GetTodoItemsAsync();
         }
 
-        // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<ValuesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] TodoItem todoItem)
         {
+            await _mongoDbService.CreateTodoItem(todoItem);
+            return CreatedAtAction(nameof(Get), new { id = todoItem.Id }, todoItem);
         }
 
-        // PUT api/<ValuesController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> UpdateTaskCompletion(string id, [FromBody] bool isComplete)
         {
+            await _mongoDbService.UpdateTodoItemDoneAsync(id, isComplete);
+            return NoContent();
         }
 
-        // DELETE api/<ValuesController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> DeleteTaskAsync(string id)
         {
+            await _mongoDbService.DeleteTaskAsync(id);
+            return NoContent();
         }
+
     }
 }

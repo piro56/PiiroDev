@@ -49,7 +49,7 @@ namespace LearningWebApp.Database
 
         }
 
-        public IEnumerable<string> getDBNames()
+        public IEnumerable<string> GetDBNames()
         {
             List<string> dbNames = new List<string>();
             IAsyncCursor<string> cursor = client.ListDatabaseNames();
@@ -61,7 +61,7 @@ namespace LearningWebApp.Database
         public void debugListDatabaseNames()
         {
             _logger.LogDebug("Database Names:");
-            foreach (string dbname in getDBNames())
+            foreach (string dbname in GetDBNames())
             {
                 _logger.LogDebug("\t" + dbname);
             }

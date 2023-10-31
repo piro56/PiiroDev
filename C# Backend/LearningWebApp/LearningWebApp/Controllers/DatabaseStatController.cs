@@ -13,7 +13,7 @@ namespace LearningWebApp.Controllers
         [HttpGet()]
         public IEnumerable<string> Get()
         {
-            return MongoDBConn.Instance.getDBNames();
+            return MongoDBConn.Instance.GetDBNames();
         }
 
     }
